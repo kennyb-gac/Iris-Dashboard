@@ -1,6 +1,10 @@
 table iris_data
 	lineageTag: b5617b59-edf6-4530-9964-34939fb85582
 
+	measure Counter = COUNTROWS()
+		formatString: 0
+		lineageTag: 78d99b3a-7908-4487-9d72-7e53cc43458c
+
 	column species
 		dataType: string
 		lineageTag: 7d998428-5989-438d-aaec-8fd32d263ddf
@@ -206,6 +210,12 @@ table iris_data
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column soil_group = SWITCH(iris_data[soil_type],"clay","clay type","loamy","clay type","sand type")
+		lineageTag: 5a626a7e-2170-4273-92dd-ecbc208725d9
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
 
 	partition iris_data = m
 		mode: import
