@@ -1,0 +1,107 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "2ee4be32df496755e797",
+  "position": {
+    "x": 622.97872340425533,
+    "y": 329.72644376899694,
+    "z": 3,
+    "height": 420.18237082066867,
+    "width": 434.77203647416411,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_data"
+                    }
+                  },
+                  "Property": "soilGroup"
+                }
+              },
+              "queryRef": "iris_data.soilGroup",
+              "nativeQueryRef": "soilGroup",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Count"
+                }
+              },
+              "queryRef": "_Measures.Count",
+              "nativeQueryRef": "Count"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Count"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "da3afd73dec79a703da1",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "iris_data"
+              }
+            },
+            "Property": "soilGroup"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "4e0098e22c796fceb627",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Count"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

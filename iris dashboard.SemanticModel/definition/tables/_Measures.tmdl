@@ -1,0 +1,53 @@
+table _Measures
+	lineageTag: e640bf8d-4627-43e5-b7ae-7a159df43871
+
+	measure 'Average Sepal Length' = AVERAGE(iris_data[sepal_length])
+		lineageTag: 10a714a5-e25c-4c35-bb66-0c4fa4614ab9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Sepal Width' = AVERAGE(iris_data[sepal_width])
+		lineageTag: a6a18531-8513-40f8-bdc6-8c4c8810a61f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Petal Length' = AVERAGE(iris_data[petal_length])
+		lineageTag: 230662d5-4939-4d83-963b-6b2fce4758e2
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Petal Width' = AVERAGE(iris_data[petal_width])
+		lineageTag: b0c83ead-174c-412c-828b-12a44c896fa1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Elevation' = Average(iris_data[elevation])
+		lineageTag: 183c306c-0ecb-4743-ab23-f76ca86aa9b8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Count = COUNTROWS(iris_data)
+		formatString: 0
+		lineageTag: f6f4ebc5-f8a9-4019-bfa5-fce78d0df23a
+
+	column Column1
+		dataType: string
+		lineageTag: efdf6c72-083d-46d6-9c57-667f3585755d
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

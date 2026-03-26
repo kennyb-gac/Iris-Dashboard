@@ -1,0 +1,107 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "999a6bdd7f157d802e30",
+  "position": {
+    "x": 39.392097264437687,
+    "y": 329.72644376899694,
+    "z": 1,
+    "height": 420.18237082066867,
+    "width": 538.35866261398178,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_data"
+                    }
+                  },
+                  "Property": "soilGroup"
+                }
+              },
+              "queryRef": "iris_data.soilGroup",
+              "nativeQueryRef": "soilGroup",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Average Elevation"
+                }
+              },
+              "queryRef": "_Measures.Average Elevation",
+              "nativeQueryRef": "Average Elevation"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Average Elevation"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "4243fb3562f0e9e50280",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "iris_data"
+              }
+            },
+            "Property": "soilGroup"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "9c6ad618c0900f688c6c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Average Elevation"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

@@ -8,11 +8,12 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["iris_data"]
+annotation PBI_QueryOrder = ["iris_data","_Measures"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table iris_data
+ref table _Measures
 
 ref cultureInfo en-US
 

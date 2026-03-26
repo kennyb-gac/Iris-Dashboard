@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
-  "name": "ff6e44092426086264ff",
+  "name": "8d6a77eb3a9ba5e2817a",
   "position": {
-    "x": 23.029556650246306,
-    "y": 0,
-    "z": 2000,
-    "height": 53.38669950738916,
-    "width": 279.49507389162562,
-    "tabOrder": 2000
+    "x": 100,
+    "y": 100,
+    "z": 4,
+    "height": 300,
+    "width": 300,
+    "tabOrder": 4
   },
   "visual": {
     "visualType": "textbox",
@@ -19,10 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "Iris Dashboard",
-                    "textStyle": {
-                      "fontSize": "28pt"
-                    }
+                    "value": ""
                   }
                 ]
               }
