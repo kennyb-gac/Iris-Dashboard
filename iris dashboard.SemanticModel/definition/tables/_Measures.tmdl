@@ -21,6 +21,15 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Average Elevation' = Average(iris_data[elevation])
+		lineageTag: 183c306c-0ecb-4743-ab23-f76ca86aa9b8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Count = COUNTROWS(iris_data)
+		formatString: 0
+		lineageTag: f6f4ebc5-f8a9-4019-bfa5-fce78d0df23a
+
 	column Column1
 		dataType: string
 		lineageTag: efdf6c72-083d-46d6-9c57-667f3585755d

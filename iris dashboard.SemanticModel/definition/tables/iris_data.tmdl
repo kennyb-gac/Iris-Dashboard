@@ -207,6 +207,12 @@ table iris_data
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column soilGroup = SWITCH(iris_data[soil_type],"clay","clay type","loamy","clay type","sand type")
+		lineageTag: 450f3eb2-cb06-451d-85ed-3229af33360a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition iris_data = m
 		mode: import
 		source =
