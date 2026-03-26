@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "iris dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "38bcd695-f33f-42af-89f3-c14c08ecc0c7"
+  }
+}

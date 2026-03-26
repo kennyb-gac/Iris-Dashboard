@@ -1,0 +1,223 @@
+table iris_data
+	lineageTag: b5617b59-edf6-4530-9964-34939fb85582
+
+	column species
+		dataType: string
+		lineageTag: 7d998428-5989-438d-aaec-8fd32d263ddf
+		summarizeBy: none
+		sourceColumn: species
+
+		annotation SummarizationSetBy = Automatic
+
+	column elevation
+		dataType: double
+		lineageTag: 5f53017e-63af-442e-98cd-8d13b032faf5
+		summarizeBy: sum
+		sourceColumn: elevation
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column soil_type
+		dataType: string
+		lineageTag: 91e9653d-d72f-4920-a59c-cbfafe419182
+		summarizeBy: none
+		sourceColumn: soil_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column sepal_length
+		dataType: double
+		lineageTag: f67558b0-a9f8-4ce4-b580-a92fabd9fa27
+		summarizeBy: sum
+		sourceColumn: sepal_length
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sepal_width
+		dataType: double
+		lineageTag: a5ce4d30-cf8f-42a3-8a7c-8be4e4c85893
+		summarizeBy: sum
+		sourceColumn: sepal_width
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column petal_length
+		dataType: double
+		lineageTag: 72385a67-d069-402c-82ce-0922f5e5321e
+		summarizeBy: sum
+		sourceColumn: petal_length
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column petal_width
+		dataType: double
+		lineageTag: ba40d20a-f987-4f21-abb0-1d4d0ceee76e
+		summarizeBy: sum
+		sourceColumn: petal_width
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sepal_area
+		dataType: double
+		lineageTag: e38c769c-f051-43bc-8216-e1ea72487cb3
+		summarizeBy: sum
+		sourceColumn: sepal_area
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column petal_area
+		dataType: double
+		lineageTag: 7243ee1e-de62-46ec-9a0b-8557f9a5e5e1
+		summarizeBy: sum
+		sourceColumn: petal_area
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sepal_aspect_ratio
+		dataType: double
+		lineageTag: 43de71f1-9962-451f-9047-a23a005db07a
+		summarizeBy: sum
+		sourceColumn: sepal_aspect_ratio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column petal_aspect_ratio
+		dataType: double
+		lineageTag: 748cd79a-f28d-4c6d-9930-fa40f9a60f3e
+		summarizeBy: sum
+		sourceColumn: petal_aspect_ratio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sepal_to_petal_length_ratio
+		dataType: double
+		lineageTag: b086cb89-065f-4547-87ac-32316fc5caf3
+		summarizeBy: sum
+		sourceColumn: sepal_to_petal_length_ratio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sepal_to_petal_width_ratio
+		dataType: double
+		lineageTag: 2a62ba0b-76ed-4616-aec0-adf73699abeb
+		summarizeBy: sum
+		sourceColumn: sepal_to_petal_width_ratio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sepal_petal_length_diff
+		dataType: double
+		lineageTag: 1a5a3134-16c3-40bd-ac2c-e9fafcb48a19
+		summarizeBy: sum
+		sourceColumn: sepal_petal_length_diff
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sepal_petal_width_diff
+		dataType: double
+		lineageTag: d5dfdcc2-8997-4640-8ca2-8dbe5a1fd1e9
+		summarizeBy: sum
+		sourceColumn: sepal_petal_width_diff
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column petal_curvature_mm
+		dataType: double
+		lineageTag: 8e6c8642-f656-45be-99e2-05af136fa0f2
+		summarizeBy: sum
+		sourceColumn: petal_curvature_mm
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column petal_texture_trichomes_per_mm2
+		dataType: double
+		lineageTag: 85de50e7-eca8-41b2-bb03-bfaef1e988d1
+		summarizeBy: sum
+		sourceColumn: petal_texture_trichomes_per_mm2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column leaf_area_cm2
+		dataType: double
+		lineageTag: 7d4a7690-e208-4ba9-804f-3bf058a912be
+		summarizeBy: sum
+		sourceColumn: leaf_area_cm2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sepal_area_sqrt
+		dataType: double
+		lineageTag: 33409004-bdb7-4046-b70d-bae438b6f9a8
+		summarizeBy: sum
+		sourceColumn: sepal_area_sqrt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column petal_area_sqrt
+		dataType: double
+		lineageTag: c96404e9-22ce-4942-a388-2f252983aa44
+		summarizeBy: sum
+		sourceColumn: petal_area_sqrt
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column area_ratios
+		dataType: double
+		lineageTag: 5bbe40bc-db14-41b5-9d78-4daae1473ce5
+		summarizeBy: sum
+		sourceColumn: area_ratios
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition iris_data = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Databases("5z3h3quan2puzbmsyq5kfp2fw4-mefqhgsmresu3lbdlu7dczr3na.datawarehouse.fabric.microsoft.com"),
+				    Iris = Source{[Name="Iris"]}[Data],
+				    dbo_iris_data = Iris{[Schema="dbo",Item="iris_data"]}[Data]
+				in
+				    dbo_iris_data
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
