@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "e1642e92c1c2aec5a12c",
+  "position": {
+    "x": 863.60837438423641,
+    "y": 7.3275862068965516,
+    "z": 6,
+    "height": 93.165024630541865,
+    "width": 299.38423645320194,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "iris_data"
+                    }
+                  },
+                  "Property": "elevation"
+                }
+              },
+              "queryRef": "iris_data.elevation",
+              "nativeQueryRef": "elevation",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Between'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1d7ca3bbe3279beccc09",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "iris_data"
+              }
+            },
+            "Property": "elevation"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
